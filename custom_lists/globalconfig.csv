@@ -1,0 +1,7 @@
+ticketing,"servicenow,email,jira"
+internal_cidr,"10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
+domains,"contoso.com,contoso.local"
+aws_region,eu-west-1
+isolation_sg,sg-009121c0a21b323e4
+splunk_email_search,"index=office365 sourcetype=""ms:o365:reporting:messagetrace"" SenderAddress=""{0}"" Subject=""*{1}*"" earliest=-7d@d | table RecipientAddress Received Subject SenderAddress FromIP MessageId"
+request_a_mailbox_search_email,winstonchurchill@attackrange.local

@@ -1,7 +1,8 @@
 ticketing,"servicenow,email,jira"
-internal_cidr,"10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
-domains,"contoso.com,contoso.local"
+internal_cidr,"10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,3.11.42.2/32"
+domains,"attackrange.local,three-tomatoes.co.uk"
 aws_region,eu-west-1
-isolation_sg,sg-009121c0a21b323e4
+isolation_sg,sg-082b3beb00d485658
 splunk_email_search,"index=office365 sourcetype=""ms:o365:reporting:messagetrace"" SenderAddress=""{0}"" Subject=""*{1}*"" earliest=-7d@d | table RecipientAddress Received Subject SenderAddress FromIP MessageId"
-request_a_mailbox_search_email,winstonchurchill@attackrange.local
+request_a_mailbox_search_email,abrahamlincoln@qingcorp.co.uk
+network_team_email_address,abrahamlincoln@qingcorp.co.uk

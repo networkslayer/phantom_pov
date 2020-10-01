@@ -1,1 +1,67 @@
-{"id": 12, "name": "POV_AWS_SecurityHub_Triage", "description": "Use this workbook to triage events that are created with the aws_security_hub label, to do an initial investigation before escalating if needed. ", "status": "published", "is_default": false, "is_note_required": true, "creator": 1, "create_time": "2020-09-02T13:15:31.340712Z", "modified_time": "2020-09-19T12:12:47.470318Z"}
+{
+    "name": "POV_AWS_SecurityHub_Triage",
+    "description": "Use this workbook to triage events that are created with the aws_security_hub label, to do an initial investigation before escalating if needed. ",
+    "status": "published",
+    "is_default": false,
+    "is_note_required": true,
+}
+    {
+        "name": "POV_AWS_SecurityHub_Triage",
+        "description": "WORKBOOK DESCRIPTION",
+        "phases": [
+            {
+                "id": "new-phase4",
+                "name": "PHASE1",
+                "tasks": [
+                    {
+                        "id": "new-task5",
+                        "name": "TASK 1",
+                        "description": "TASK1 DESC",
+                        "owner": null,
+                        "is_note_required": true,
+                        "actions": [
+                            "geolocate ip",
+                            "lookup ip"
+                        ],
+                        "playbooks": [
+                            {
+                                "scm": "community",
+                                "playbook": "activedirectory_reset_password"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "new-task186",
+                        "name": "TASK2",
+                        "description": "TASK2 DESC",
+                        "is_note_required": true,
+                        "actions": [
+                            "url reputation",
+                            "whois ip"
+                        ],
+                        "playbooks": [
+                            {
+                                "scm": "community",
+                                "playbook": "alert_escalation_for_attacked_executives"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "new-phase62",
+                "name": "PHASE2",
+                "tasks": [
+                    {
+                        "id": "new-task66",
+                        "name": "PHASE 2 - TASK2",
+                        "description": "PHASE2 TASK 2 DESC",
+                        "is_note_required": true
+                    }
+                ]
+            }
+        ],
+        "is_default": false,
+        "is_note_required": true
+    }
+}

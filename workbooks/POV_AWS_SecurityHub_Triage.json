@@ -1,4 +1,5 @@
-{"name": "POV_AWS_SecurityHub_Triage",
+{
+    "name": "POV_AWS_SecurityHub_Triage",
     "description": "Use this workbook to triage events that are created with the aws_security_hub label, to do an initial investigation before escalating if needed. ",
     "status": "published",
     "is_default": false,
